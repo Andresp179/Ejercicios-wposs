@@ -1,0 +1,197 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:padding="2dp"
+    android:background="@color/lightgray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="606dp">
+
+    <TableRow android:layout_height="match_parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15sp" />
+    </TableRow>
+    //------------------------------------------------
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/recarg"
+                android:textSize="25sp" />
+        </TableRow>
+     //--------------------------------------------------
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15sp" />
+        </TableRow>
+      //---------------------------------------------------
+        <TableRow
+            android:layout_width="30sp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="30sp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/numero"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="@string/nume"
+                    android:textColorHint="@color/colorApp2"
+                    app:boxStrokeColor="@color/colorApp2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:textColor="@color/colorApp2"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/nume"
+                        android:inputType="number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+        </TableRow>
+      //----------------------------------------------------------------------
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10sp" />
+        </TableRow>
+      //-------------------------------------------------------------------------
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10sp" />
+        </TableRow>
+      //-------------------------------------------------------------------------
+        <TableRow
+            android:layout_width="20sp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="@string/opera"
+                    android:textColor="#050505"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+                <Space
+                    android:layout_width="10sp"
+                    android:layout_height="match_parent" />
+
+                <Spinner
+                    android:id="@+id/SppOperador"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit"
+                    android:textColor="#050505"/>
+
+
+
+
+            </LinearLayout>
+        </TableRow>
+      //-------------------------------------------------------------------------
+        <TableRow
+            android:layout_width="30sp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="30sp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/monto"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="@string/mont"
+                    android:textColorHint="@color/colorApp2"
+                    app:boxStrokeColor="@color/colorApp2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:textColor="@color/colorApp2"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/mont"
+                        android:inputType="number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+        </TableRow>
+        //--------------------------------------------------------------------------------
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10sp" />
+        </TableRow>
+        //--------------------------------------------------------------------------------
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent" >
+
+            <Button
+
+                android:id="@+id/recarga_bt"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/recarg"
+                />
+        </TableRow>
+
+
+    </TableLayout>
+</androidx.core.widget.NestedScrollView>

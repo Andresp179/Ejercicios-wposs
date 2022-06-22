@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="450dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:padding="5dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="250dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirm_numero"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/nume"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            app:endIconMode="clear_text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="250dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="110dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirm_operador"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/opera"
+            android:maxLines="1"
+            android:inputType="text"
+            android:textColor="@color/black"
+            app:endIconMode="clear_text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="250dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="180dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirm_monto"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/mont"
+            android:maxLines="1"
+            android:inputType="text"
+            android:textColor="@color/black"
+            app:endIconMode="clear_text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnconfirmacion"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/border_bg"
+        android:text="@string/confir" />
+    <Button
+        android:id="@+id/btncancelar"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/border_bg"
+        android:text="@string/can" />
+
+
+</RelativeLayout>
